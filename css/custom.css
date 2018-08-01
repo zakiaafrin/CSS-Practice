@@ -1,0 +1,81 @@
+/* q1 */
+.logo{
+    color: red;
+}
+/* q2 */
+.menu-items a:link{
+   color: green;
+}
+/* q3 */
+.menu-items a:visited{
+    color: #444;
+}
+/* q4 */
+.card p{
+    color:white;
+}
+/* q5 */
+.card button{
+    color:white;
+    background-color: lightgreen;
+}
+/* q6 */
+article p::first-letter{
+    margin-left: 30px;
+}
+/* q7 */
+#blog{
+    background-color: #666;
+    color:#cff;
+}
+/* q8 */
+figure:hover{
+    box-shadow: 10px 5px #888;
+}
+/* q9 */
+figcaption{
+    padding: 8px;    
+}
+/* q11 */
+.blog-article{
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* q12 */
+.article-title{
+    text-align: center;
+}
+/* q13 */
+.section-header{
+    text-transform: uppercase;
+}
+/* q14  q15  q16 */
+.form-input{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* q17 */
+footer{
+    background-color: rgb(169,169,169);
+    color: #ffc966;
+}
+/* q18 */
+form input:focus{
+    border-width: 4px;
+}
+
+/* q19 */
+section h2::before{
+    content: ">";
+    margin-right: 4px;
+}
+
+/* q20 */
+input[type="radio"]{
+    margin-left: 20px;
+    margin-right: 5px;
+}

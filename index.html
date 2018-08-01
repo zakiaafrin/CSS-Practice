@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors Pracitce</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Make Stuff<br>Great Again</h1>
+        <button id="menu-button" class="menu-button">MENU</button>
+        <nav class="nav hide-menu">
+            <ul class="menu-items">
+                <li class="menu-item menu-close" id="menu-close">CLOSE</li>
+                <li><a class="menu-item" href="#shop">Shop</a></li>
+                <li><a class="menu-item" href="#blog">Blog</a></li>
+                <li><a class="menu-item" href="#about">About</a></li>
+                <li><a class="menu-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="above-the-fold" id="above-the-fold">
+            <div class="card">
+                <button type="button">See Our Stuff!</button>
+                <p>We have the best stuff. People are saying they love our stuff. Our stuff is tremendous.</p>
+            </div>
+            <div class="card">
+                <button type="button">BUY Our Stuff!</button>
+                <p>We have the best stuff. People are saying they love our stuff. Our stuff is tremendous.</p>
+            </div>
+            <div class="card">
+                <button type="button">Learn About Our Stuff!</button>
+                <p>We have the best stuff. People are saying they love our stuff. Our stuff is tremendous.</p>
+            </div>
+        </section>
+        <section id="shop" class="shop">
+            <h2 class="section-header">Shop</h2>
+            <hr>
+            <div id="gallery" class="gallery">
+                <figure>
+                    <img src="data:image/jpeg;base64,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" alt="burger">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/stuff.jpg" alt="picture of stuff">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/stuff.jpg" alt="picture of stuff">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/stuff.jpg" alt="picture of stuff">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/stuff.jpg" alt="picture of stuff">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/stuff.jpg" alt="picture of stuff">
+                    <figcaption>This image is fantastic.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <h2 class="section-header">Blog</h2>
+            <hr>
+            <article class="blog-article">
+                <h3 class="article-title">Our Stuff Is Great</h3>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+            </article>
+            <article class="blog-article">
+                <h3 class="article-title">Our Stuff Is Tremendous</h3>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+            </article>
+            <article class="blog-article">
+                <h3 class="article-title">Everybody Is Saying They Love Our Stuff</h3>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+                <p>Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin
+                    words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. Lorem ipsum and other latin words. </p>
+            </article>
+        </section>
+        <section id="about" class="about">
+            <h2 class="section-header">About</h2>
+            <hr>
+            <p>It was a gloomy, Wednesday afternoon many generations ago when Jane Doe and John Smith had grown tired of all their stuff. All of their stuff was too complex and diverse. They missed the days when all their stuff was simple, predictable, and
+                comfortable.</p>
+            <p>Jane had the bigly idea to "make stuff great again" &reg;, like it used to be when she was younger. Then next day, Jane and John began creating what everybody knows today as "Make Stuff Great Again."</p>
+            <p>To learn about our stuff, please see our <a href="#shop">shop</a>, check out our <a href="#blog">blog</a>, or even <a href="#contact">contact us</a>.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-header">Contact</h2>
+            <hr>
+            <form action="index.html" method="post">
+                <input class="form-input" type="text" name="dest_email" value="makestuffgreatagain@email.com" style="display: none">
+                <input class="form-input" type="text" name="name" value="" placeholder="Your Name">
+                <input class="form-input" type="email" name="email" value="" placeholder="Email">
+                <div class="form-input">
+                    <input type="radio" name="gender" value="male"><label>Male</label>
+                    <input type="radio" name="gender" value="female"><label>Female</label>
+                </div>
+                <textarea class="form-input" name="message" rows="12" cols="28" placeholder="Your message..."></textarea>
+                <input class="form-input" type="submit" value="SEND">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>&copy; 2016 by Make Stuff Great Again &reg;.</p>
+        </address>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
